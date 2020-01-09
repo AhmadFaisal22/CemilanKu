@@ -5,89 +5,69 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bby"
     tools:context=".Register">
 
     <ImageView
         android:id="@+id/iv_user"
         android:layout_width="100dp"
         android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="100dp"
-        android:layout_centerHorizontal="true"
         app:srcCompat="@drawable/splash_screen" />
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_below="@id/iv_user"
-        android:text="@string/name"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_alignLeft="@id/et_name"
-        android:layout_alignStart="@id/et_name"
-        android:layout_marginTop="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <EditText
-        android:id="@+id/et_name"
-        android:layout_below="@id/iv_user"
-        android:background="#11000000"
-        android:layout_centerHorizontal="true"
-        android:layout_width="260dp"
-        android:layout_marginTop="30dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_height="30dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        />
+
     <TextView
         android:id="@+id/tv_email1"
-        android:layout_below="@id/et_name"
-        android:text="@string/email"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_alignLeft="@id/et_name"
-        android:layout_alignStart="@id/et_name"
-        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_user"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="30dp"
+        android:text="Email"
+        android:textColor="@color/colorPrimaryDark" />
     <EditText
         android:id="@+id/et_email1"
-        android:layout_below="@id/tv_email1"
-        android:background="#11000000"
-        android:layout_centerHorizontal="true"
         android:layout_width="260dp"
-        android:textColor="@color/colorPrimaryDark"
         android:layout_height="30dp"
+        android:layout_below="@id/tv_email1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:elevation="5dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryDark"
         />
     <TextView
         android:id="@+id/tv_password1"
-        android:layout_below="@id/et_email1"
-        android:text="@string/password"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_alignLeft="@id/et_name"
-        android:layout_alignStart="@id/et_name"
-        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email1"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/password"
+        android:textColor="@color/colorPrimaryDark" />
     <EditText
         android:id="@+id/et_password1"
-        android:layout_below="@id/tv_password1"
-        android:background="#11000000"
-        android:layout_centerHorizontal="true"
         android:layout_width="260dp"
-        android:textColor="@color/colorPrimaryDark"
         android:layout_height="30dp"
+        android:layout_below="@id/tv_password1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:elevation="5dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:textColor="@color/colorPrimaryDark"
         />
     <Button
         android:id="@+id/btn_register"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
         android:layout_below="@id/et_password1"
-        android:layout_marginTop="20dp"
-        android:textColor="#FFFFFF"
-        android:background="@drawable/button_rectangle_blue"
-        android:text="@string/sign_up"
-        android:ems="10"
         android:layout_centerHorizontal="true"
-        android:layout_width="260dp"
-        android:layout_height="wrap_content"/>
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_rectangle_blue"
+        android:ems="10"
+        android:text="Register"
+        android:textColor="#FFFFFF" />
 </RelativeLayout>

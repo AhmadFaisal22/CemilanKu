@@ -16,26 +16,34 @@ import android.widget.ImageButton;
 import android.widget.Switch;
 
 public class Dashboard extends AppCompatActivity implements View.OnClickListener {
-    private CardView update, cemilan, call, sms;
+    private CardView cemilan, call, sms;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dashboard);
         //Add Cardview yang ada di dashboard
-        call = (CardView) findViewById(R.id.callcenter);
-        sms = (CardView) findViewById(R.id.smscenter);
-//        maps =(CardView)findViewById(R.id.maps);
-        update = (CardView) findViewById(R.id.update_data);
-        cemilan = (CardView) findViewById(R.id.cemilan);
+        call = findViewById(R.id.callcenter);
+        sms = findViewById(R.id.smscenter);
+        // maps =(CardView)findViewById(R.id.maps);
+        cemilan = findViewById(R.id.cemilan);
 
         //tambah clicklistener
-        update.setOnClickListener(this);
         cemilan.setOnClickListener(this);
-        call.setOnClickListener(this);
         sms.setOnClickListener(this);
-    }
+        call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Intent.ACTION_CALL);
+                i.setData(Uri.parse("tel:089510213499"));
+                if (checkSelfPermission(Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
+                    return;
+                }
+                startActivity(i);
+            }
+        });
 
+    }
     @Override
     public void onClick(View v) {
         Intent i;
@@ -44,12 +52,8 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 i = new Intent(this, MenuCemilan.class);
                 startActivity(i);
                 break;
-            case R.id.update_data:
-                i = new Intent(this, Update_data.class);
-                startActivity(i);
-                break;
             case R.id.callcenter:
-                i = new Intent(this, CallCenter.class);
+                i = new Intent(this, Dashboard.class);
                 startActivity(i);
                 break;
             case R.id.smscenter:
@@ -60,7 +64,6 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
                 break;
         }
     }
-
     public void maps(View view) {
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com/maps"));
         startActivity(intent);
