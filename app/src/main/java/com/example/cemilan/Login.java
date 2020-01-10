@@ -16,6 +16,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatAutoCompleteTextView;
 
+import com.google.android.gms.auth.api.signin.GoogleSignInApi;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -33,13 +34,13 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
-
         mAuth = FirebaseAuth.getInstance();
         Email = findViewById(R.id.edit_email);
         Pass = findViewById(R.id.edit_pass);
         Button btnLogin = findViewById(R.id.btn_login);
         TextView tvregister = findViewById(R.id.tv_register);
         checkbox = findViewById(R.id.id_checkbox);
+        
 
         checkbox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -99,4 +100,5 @@ public class Login extends AppCompatActivity {
         super.onStart();
         FirebaseUser currentUser = mAuth.getCurrentUser();
     }
+
 }

@@ -25,9 +25,8 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         //Add Cardview yang ada di dashboard
         call = findViewById(R.id.callcenter);
         sms = findViewById(R.id.smscenter);
-        // maps =(CardView)findViewById(R.id.maps);
         cemilan = findViewById(R.id.cemilan);
-
+        //admin = findViewById(R.id.recycleview_admin);
         //tambah clicklistener
         cemilan.setOnClickListener(this);
         sms.setOnClickListener(this);

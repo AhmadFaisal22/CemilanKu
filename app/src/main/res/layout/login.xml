@@ -95,6 +95,13 @@
         android:text="SIGN UP"
         android:textColor="@color/colorwhite"
         android:textSize="15sp" />
-
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:background="@drawable/box"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

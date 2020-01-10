@@ -51,6 +51,7 @@ public class Pembayaran extends AppCompatActivity {
     }
 
     public void bayar(View view) {
+
         Intent i = new Intent(Pembayaran.this, MenuCemilan.class);
         startActivity(i);
         this.finish();

@@ -27,6 +27,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.cemilan.Admin" />
         <activity android:name="com.example.cemilan.SplashScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,8 +40,7 @@
         <activity android:name="com.example.cemilan.SmsCenter" />
         <activity android:name="com.example.cemilan.MenuCemilan" />
         <activity android:name="com.example.cemilan.Dashboard" />
-        <activity android:name="com.example.cemilan.Login" >
-        </activity>
+        <activity android:name="com.example.cemilan.Login" />
         <activity
             android:name="com.google.firebase.auth.internal.FederatedSignInActivity"
             android:excludeFromRecents="true"
