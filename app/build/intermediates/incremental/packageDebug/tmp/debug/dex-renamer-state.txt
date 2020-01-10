@@ -1,7 +1,7 @@
-#Fri Jan 10 21:50:21 ICT 2020
-base.0=F\:\\All About Android\\Cemilan2\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+#Fri Jan 10 23:39:13 ICT 2020
+base.0=C\:\\Users\\adyfa\\OneDrive\\Documents\\Faisal\\CemilanKu\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=F\:\\All About Android\\Cemilan2\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+base.1=C\:\\Users\\adyfa\\OneDrive\\Documents\\Faisal\\CemilanKu\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex

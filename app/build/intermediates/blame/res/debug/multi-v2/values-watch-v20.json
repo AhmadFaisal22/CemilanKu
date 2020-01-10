@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\All About Android\\Cemilan2\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
+            "outputFile": "C:\\Users\\adyfa\\OneDrive\\Documents\\Faisal\\CemilanKu\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-watch-v20\\values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\faisa\\.gradle\\caches\\transforms-2\\files-2.1\\74977a2d936fd88d31518c0921483080\\play-services-auth-17.0.0\\res\\values-watch-v20\\values.xml",
+                    "source": "C:\\Users\\adyfa\\.gradle\\caches\\transforms-2\\files-2.1\\74977a2d936fd88d31518c0921483080\\play-services-auth-17.0.0\\res\\values-watch-v20\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11",
                         "startColumns": "0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\faisa\\.gradle\\caches\\transforms-2\\files-2.1\\53af1f37d65227eb5bcf361cc28c52ea\\appcompat-1.1.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "C:\\Users\\adyfa\\.gradle\\caches\\transforms-2\\files-2.1\\53af1f37d65227eb5bcf361cc28c52ea\\appcompat-1.1.0\\res\\values-watch-v20\\values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
