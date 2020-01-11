@@ -72,6 +72,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/harga0"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:text="$100"
@@ -116,6 +117,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold" />
                 <TextView
+                    android:id="@+id/harga1"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:text="$2000"
@@ -162,6 +164,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold" />
                 <TextView
+                    android:id="@+id/harga2"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
                     android:text="$1500"
@@ -208,6 +211,7 @@
                     android:textSize="18dp"
                     android:textStyle="bold" />
                 <TextView
+                    android:id="@+id/harga3"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:text="$200"
@@ -254,6 +258,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold" />
                 <TextView
+                    android:id="@+id/harga4"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:text="$500"
@@ -300,6 +305,7 @@
                     android:textSize="18sp"
                     android:textStyle="bold" />
                 <TextView
+                    android:id="@+id/harga5"
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
                     android:text="$300"

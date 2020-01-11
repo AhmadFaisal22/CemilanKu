@@ -1526,6 +1526,12 @@ id ghost_view
 id gone
 id group_divider
 id groups
+id harga0
+id harga1
+id harga2
+id harga3
+id harga4
+id harga5
 id hideable
 id home
 id homeAsUp
