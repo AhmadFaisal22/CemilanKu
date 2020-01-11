@@ -1,6 +1,7 @@
 package com.example.cemilan;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -14,6 +15,10 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class Register extends AppCompatActivity {
 
@@ -40,22 +45,35 @@ public class Register extends AppCompatActivity {
                     Toast.makeText(Register.this, "Silahkan Isikan Email", Toast.LENGTH_LONG).show();
                 } else if (Password.equals("")) {
                     Toast.makeText(Register.this, "Silahkan Isikan Password", Toast.LENGTH_LONG).show();
-                } else {
-                    mAuth.createUserWithEmailAndPassword(Email, Password)
-                            .addOnCompleteListener(Register.this, new OnCompleteListener<AuthResult>() {
-                                @Override
-                                public void onComplete(@NonNull Task<AuthResult> task) {
-                                    if (task.isSuccessful()) {
-                                        FirebaseUser user = mAuth.getCurrentUser();
-                                        Toast.makeText(Register.this, "Authentication Success."
-                                                , Toast.LENGTH_SHORT).show();
-                                    } else {
-                                        Toast.makeText(Register.this, "Authentication failed."
-                                                , Toast.LENGTH_SHORT).show();
-                                    }
-                                }
-                            });
+                }else {
+                    RetrofitClient.servicesApi().register(Email,Password).enqueue(new Callback<String>() {
+                        @Override
+                        public void onResponse(Call<String> call, Response<String> response) {
+                            Log.d("ini message ==========",response.body());
+                        }
+
+                        @Override
+                        public void onFailure(Call<String> call, Throwable t) {
+                            Log.d("ini message ==========",t.toString());
+                        }
+                    });
                 }
+//                else {
+//                    mAuth.createUserWithEmailAndPassword(Email, Password)
+//                            .addOnCompleteListener(Register.this, new OnCompleteListener<AuthResult>() {
+//                                @Override
+//                                public void onComplete(@NonNull Task<AuthResult> task) {
+//                                    if (task.isSuccessful()) {
+//                                        FirebaseUser user = mAuth.getCurrentUser();
+//                                        Toast.makeText(Register.this, "Authentication Success."
+//                                                , Toast.LENGTH_SHORT).show();
+//                                    } else {
+//                                        Toast.makeText(Register.this, "Authentication failed."
+//                                                , Toast.LENGTH_SHORT).show();
+//                                    }
+//                                }
+//                            });
+//                }
             }
         });
     }
