@@ -1,10 +1,12 @@
 package com.example.cemilan;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageView;
@@ -31,6 +33,12 @@ public class MenuCemilan extends AppCompatActivity implements OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if(getSupportActionBar()!=null) {
+            getSupportActionBar().setTitle("Menu cemilan");
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
         setContentView(R.layout.menu_cemilan);
         loadData();
         rago = (TextView) findViewById(R.id.Harga);
@@ -195,5 +203,12 @@ public class MenuCemilan extends AppCompatActivity implements OnClickListener {
         });
 
         return idxFind[0];
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if(item.getItemId()== android.R.id.home)
+            finish();
+        return super.onOptionsItemSelected(item);
     }
 }
