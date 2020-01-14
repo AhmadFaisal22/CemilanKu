@@ -2,6 +2,8 @@ package com.example.cemilan;
 
 import com.example.cemilan.Model.Barang;
 import com.example.cemilan.Model.BarangList;
+import com.example.cemilan.Model.Makanan;
+import com.example.cemilan.Model.MakananResponse;
 import com.example.cemilan.Model.PayloadTrx;
 import com.example.cemilan.Model.User;
 import com.google.gson.JsonObject;
@@ -28,6 +30,9 @@ interface ApiInterface {
 
     @GET("select.php")
     Call<ArrayList<Barang>> barang();
+
+    @GET("dataMakanan.json")
+    Call<MakananResponse> getDataMakanans();
 
 
     @Multipart

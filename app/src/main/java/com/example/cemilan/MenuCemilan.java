@@ -70,11 +70,7 @@ public class MenuCemilan extends AppCompatActivity implements OnClickListener {
                     barangList.get(index).total += 1;
                 } else {
                     barangList.add(
-                            new BarangList(
-                                    barang.get(0).id,
-                                    barang.get(0).harga,
-                                   1,
-                                    "Dorayak"));
+                            new BarangList(barang.get(0).id, barang.get(0).harga, 1, "Dorayaki"));
                 }
                 break;
             case R.id.img_sushi:

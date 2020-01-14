@@ -1438,6 +1438,7 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addCount
 id adjust_height
 id adjust_width
 id admin
@@ -1459,6 +1460,7 @@ id buttonPanel
 id calendar_days_header
 id callcenter
 id cancel_button
+id card_count_price
 id cemilan
 id center
 id center_horizontal
@@ -1502,6 +1504,7 @@ id editText2
 id edit_email
 id edit_pass
 id edit_query
+id edtCount
 id edt_bayar
 id edt_kemabalian
 id end
@@ -1523,6 +1526,7 @@ id fixed
 id forever
 id french
 id ghost_view
+id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
@@ -1541,6 +1545,7 @@ id icon_only
 id id_checkbox
 id ifRoom
 id image
+id imageMakanan
 id img_admin
 id img_cemilan
 id img_dango
@@ -1614,7 +1619,9 @@ id progress_circular
 id progress_horizontal
 id radio
 id ramen
+id recycleview
 id recycleview_admin
+id removeCount
 id right
 id right_icon
 id right_side
@@ -1703,6 +1710,9 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tvDeskripsi
+id tvPrice
+id tvTitle
 id tv_email1
 id tv_password1
 id tv_register
@@ -1775,6 +1785,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_menu_cemilan2
 layout admin
 layout custom_dialog
 layout dashboard
@@ -1793,6 +1804,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout item_makanan
 layout login
 layout menu_cemilan
 layout mtrl_alert_dialog
