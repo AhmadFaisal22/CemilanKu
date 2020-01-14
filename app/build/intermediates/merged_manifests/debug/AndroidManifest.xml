@@ -27,6 +27,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.example.cemilan.MenuCemilan2" />
         <activity android:name="com.example.cemilan.Admin" />
         <activity
             android:name="com.example.cemilan.SplashScreen"

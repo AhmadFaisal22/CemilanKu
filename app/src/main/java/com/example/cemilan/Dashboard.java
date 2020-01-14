@@ -54,7 +54,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
         Intent i;
         switch (v.getId()) {
             case R.id.cemilan:
-                i = new Intent(this, MenuCemilan.class);
+                i = new Intent(this, MenuCemilan2.class);
                 startActivity(i);
                 break;
             case R.id.callcenter:
